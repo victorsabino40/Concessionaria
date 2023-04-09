@@ -1,0 +1,52 @@
+	public class carro {
+    	public String marca;
+        public String modelo;
+        public boolean novo;
+        public Integer anoFabricacao;
+        public String placa;
+        public Integer valoratual;
+    	public Integer valorvenda;
+    	
+    {
+        valorvenda=0;
+    }
+        
+            public carro () {
+            }
+    		public carro (String modelo) {
+        		this.modelo = modelo;
+    }  
+    		public carro (Integer anoFabricacao){
+                this.anoFabricacao = anoFabricacao;
+                
+            }
+
+        }
+	public class Funcionario {
+    public string nome;
+    public string rg;
+    public string CPF;
+    public string telefone;
+    public integer matricula;
+    public string email;
+    
+   public void venderVeiculo(carro carro){
+        if(carro.novo == false){
+            System.debug('Valor do bonus é:' +(carro.valorvenda /100)* 10);
+        }else{
+            System.debug('Valor do bonus é:' +(carro.valorvenda/100) *15);
+        }
+   
+   }}
+//Enter apex code
+carro novo = new carro();
+carro.marca = 'chevrolet';
+carro.modelo = 'camaro';
+carro.novo = true;
+carro.anoFabricacao = 2020;
+carro.placa = 'NYD-7947';
+carro.valoratual = 30000;
+carro.valorvenda = 50000;
+Funcionario Marcos = new Funcionario();
+Marcos.bonus(carro);
+Marcos.venderveiculo(carro);
